@@ -126,7 +126,7 @@ if(isset($_POST['btnCA'])) {
                                 <h4>Admin Create Account Process</h4>
                                 <p>Dear Admin,</p>
                                 <p>The system has received a sign-up request from the email address $emailca. If this request was initiated by you, kindly click the button below to proceed with creating an account. If you did not initiate this request, please ignore this email. Rest assured that we keep your email secure. Thank you.</p>
-                                <p><a class='button' style='color: white;' href='https://palm.onrender.com/MAsignuppage.php?Get=$encoded_emailca&token=$encodedToken'>Proceed to Account Setup</a></p>
+                                <p><a class='button' style='color: white;' href='https://palm-kgsh.onrender.com/MAsignuppage.php?Get=$encoded_emailca&token=$encodedToken'>Proceed to Account Setup</a></p>
                                 <br>
                                 <p><em>Please dont share this mail.</em></p>
                             </div>
@@ -135,7 +135,7 @@ if(isset($_POST['btnCA'])) {
     
                     $mail->AltBody = 
                         "$emailca if this is valid address click the button below to proceed Account Setup.
-                        <p><a href='https://palm.onrender.com/MAsignuppage.php?Get=$encoded_emailca&token=$encodedToken''>Link to Proceed to Account Setup</a></p>
+                        <p><a href='https://palm-kgsh.onrender.com/MAsignuppage.php?Get=$encoded_emailca&token=$encodedToken''>Link to Proceed to Account Setup</a></p>
                         ";
     
                 

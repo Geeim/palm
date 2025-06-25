@@ -117,7 +117,7 @@ if (isset($_POST['FPbuttonAT'])) {
                                     <h4>Request Recovery</h4>
                                     <p>Hello $Efname $Elname,</p>
                                     <p>We received a request to recover your account. If you initiated this request, please click the button below to proceed with the recovery process. If you did not initiate this request, please ignore this email. Rest assured that we keep your email secure. Thank you.</p>
-                                    <p><a class='button' href='https://palm.onrender.com/ATresetpass.php?Get=$encoded_IDemployee&token=$encodedToken'>Recover Process</a></p>
+                                    <p><a class='button' href='https://palm-kgsh.onrender.com/ATresetpass.php?Get=$encoded_IDemployee&token=$encodedToken'>Recover Process</a></p>
                                     <br>
                                     <p><em>This is an automated message. Please do not reply.</em></p>
                                 </div>
@@ -126,7 +126,7 @@ if (isset($_POST['FPbuttonAT'])) {
                         ";
                                         
                         $mail->AltBody = "Hello $Efname $Elname, please click the link below to recover your account.
-                                            <p><a class='button' href='https://palm.onrender.com/ATresetpass.php?Get=$encoded_IDemployee&token=$encodedToken'>Recover Process</a></p>";
+                                            <p><a class='button'https://palm-kgsh.onrender.com/ATresetpass.php?Get=$encoded_IDemployee&token=$encodedToken'>Recover Process</a></p>";
                         
                         $mail->send();
                         
