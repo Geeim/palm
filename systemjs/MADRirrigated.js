@@ -514,7 +514,7 @@ $(document).on('submit', '#exportirrigated', function (e) {
 
                    $('#exportmodalIrrigated').modal('hide');
                    $('#exportirrigated')[0].reset();
-               }, 5000);  // 3-second delay (3000 milliseconds)
+               }, 9000);  // 3-second delay (3000 milliseconds)
 
             
             } else if (res.status == 'ERROR') {
