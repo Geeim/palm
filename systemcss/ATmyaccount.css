@@ -1,0 +1,418 @@
+/*ALL DESIGN*/
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../systemimg/Farm1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 100%;
+    height:100%;
+    min-height:100% ;
+}
+
+.bg-costum{
+    background-color: #fff1;
+    backdrop-filter: blur(7px);
+}
+
+h4, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Card Header Design*/
+.card-header{
+    border-radius: 0px;}
+.card,
+.card-header{
+    border:0;
+    border-radius: 0; } 
+.card-header{
+    background-color: #fff2;
+    backdrop-filter: blur(7px);}
+
+
+.row {
+    width: 100%;
+    min-width: 900px;
+}
+
+/*RELATED SETTINGS*/
+.relatedsettings {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.relatedsettings button{
+    text-decoration: none;
+    color: white;
+}
+
+.relatedsettings button:hover{
+    color: #b9c7bd;
+    font-size: 17px;
+}
+
+/*Modal*/
+
+.inputLogLabels{
+font-weight: 400;
+font-size: 14px;
+}
+
+
+
+/*CLOCK DESIGN*/
+
+  /*Clock Circle*/
+  .clock__circle {
+    position: relative;
+    width: 75px;
+    height: 65px;
+    border: 3px solid #343a40;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 8px hsla(0, 0%, 0%, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  .clock__hour { /*Stick Clock Hours*/
+    width: 2px;
+    height: 14px;
+    background-color: black;
+  }
+  .clock__minutes { /*Stick Clock Minuets*/
+    width: 2px;
+    height: 20px;
+    background-color: black;
+  }
+  /*Stick Shadow and Position*/
+  .clock__hour, 
+  .clock__minutes { 
+    box-shadow: 0 0 6px hsla(0, 0%, 0%, .25);
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom;
+  }
+
+
+
+      
+/*Design Weather Forcast*/
+#cityName{
+    text-transform:uppercase;
+}
+
+/*For Icons*/
+#weather-icon {
+    font-size: 70px;
+    display:contents;
+}
+
+#description{
+    font-size:12px;
+}
+
+.cloudy {
+    color: #6C757D  ;
+}
+.rainy {
+    color: #7D8C8D;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.sunny {
+    color: #ffc107;
+    margin-top:10px;
+    margin-bottom: 10px;    
+}
+.clear-night {
+    color: #333;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.unknown {
+    color: #dc3545;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.side1{
+    padding-inline: 10px;
+}
+
+ /*Weather Design*/
+ 
+.Weather {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+ .side1, .side2{
+    display: inline-block;
+}
+.side1{
+    padding-right:20px;
+}
+
+
+
+
+/*TABLE_DESIGN*/
+
+    /*ALL TABLE DESIGN*/
+    table{
+        background-color: transparent !important;
+    }
+    main{
+        font-family: sans-serif;
+    }
+    main.table {
+        height: 60vh;
+        background-color: #fff1;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 .4rem .8rem #0005;
+        overflow: hidden;
+    }
+
+
+/*TABLE HEADER DESIGN*/
+    .table__header {
+        width: 100%;
+        height: 15%;
+        background-color: #fff2;
+        backdrop-filter: blur(7px);
+        padding: .8rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table__header .input-group {
+        width: 35%;
+        height: 100%;
+        background-color: #fff5;
+        padding: 0 .8rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+    .table__header .input-group:hover {
+        width: 45%;
+        background-color: rgba(16, 58, 37, 0.363);
+        box-shadow: 0 .1rem .4rem #0002;
+    }
+    .table__header .input-group input {
+        width: 95%;
+        padding: 0 .5rem 0 .3rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .data i,
+    .data span {
+        background-color: transparent !important;
+        color: white !important;
+    }
+    .input-group {
+        position: relative;
+    }
+    .search-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+    .input-group i{
+        background-color: transparent;
+        color: white;
+    }
+    .input-group input::placeholder {
+        color: white; 
+        opacity: 0.7; 
+    }   
+
+    
+/*Table Body Design*/ 
+.table_body {
+    width: 98%;
+    max-height: calc(89% - 1.6rem);
+    margin: .8rem auto;
+    display: flex;
+}
+
+
+.table_body_1, .table_body_2{
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+
+/*Table Body Design - SCROLL DESIGN*/
+.table_body_1::-webkit-scrollbar,
+.table_body_2::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table_body_1::-webkit-scrollbar-thumb,
+.table_body_2::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.table_body_1:hover::-webkit-scrollbar-thumb,
+.table_body_2:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+/*Table View Design*/
+table {
+    width: 100%;
+}
+/*Table View Design - TD and TH Design*/
+table,td {
+    border-collapse: collapse;
+    padding: 30px;
+    text-align: left;
+}
+table,th {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+/*Table View Design - Header Design*/
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #5e7e6c50;
+    cursor: pointer;
+    text-transform: capitalize;
+    color:white;
+}
+
+
+/*Table View Design - Changing Color per line*/
+tbody tr:nth-child(even) {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.06); 
+}
+tbody tr:nth-child(odd) {
+    color:white;
+    background-color: rgba(255, 255, 255, 0.03); 
+}
+
+/*Table View Design - transition for show line*/
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+tbody tr td,
+tbody tr td p{
+    transition: .2s ease-in-out;
+}
+
+
+/* Table View Design - transition for Hide Line */
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+    height: 0; /* Collapse the row height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0; /* Remove padding for hidden rows */
+    font: 0 / 0 sans-serif; /* Hide text */
+    transition: .2s ease-in-out .5s;
+}
+
+/* Button Styles when Row is Hidden */
+tbody tr.hide td button {
+    display: none; /* Hide the button when the row is hidden */
+}
+
+/* Table View Design - hover per line */
+tbody tr:hover {
+    background-color: rgba(71, 116, 88, 0.568) !important;
+}
+
+
+
+
+
+
+
+#table1{
+    margin-right: 5px;
+}
+#table2{
+    margin-left: 5px;
+}
+
+
+.table_body_1, .table_body_2{
+    width: 100%;
+}
+
+
+.modal-backdrop{
+    display: none;
+}
+
+.modal-content{
+    border-radius: 0;
+}
+
+.modal-header {
+    border-radius: 0;
+    background-color: #4a755f;
+    color:white;
+}
+
+.modal-header h5{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+/*Button Header*/
+
+    .modal-header button,
+    .modal-header button{
+        color:white;
+    }
+
+    /* Pag-hover ng button para lumaki */
+    .modal-header button:hover,
+    .modal-header button:hover {
+        transform: scale(1.5); /* Pagtanggal ng laki ng button (20% bigger) */
+    }
+
+
+.modal-footer button{
+    width: 80%;
+}
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.7);
+}

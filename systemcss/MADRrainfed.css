@@ -1,0 +1,657 @@
+/*ALL DESIGN*/
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../systemimg/Farm1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 100%;
+    height:100%;
+    min-height:100% ;
+}
+
+.bg-custom {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+}
+
+.row {
+    min-width: 900px;
+}
+
+
+.inputfield button {
+    border-radius: 5px;
+    width: 40%;
+    border: 0;
+    padding: 0.5em;
+    color: white;
+    background-color: #4a755f;
+    margin-top: 0px;
+}
+
+.inputfield button:hover {
+    background: #466453;
+    color: white;
+    border-color: #466453; /* This won't have an effect since border is 0 */
+}
+
+.fw-custom {
+    font-weight: 100 ;/* Adjust this value as needed */
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+/*TABLE_DESIGN*/
+
+    /*ALL TABLE DESIGN*/
+    table{
+        background-color: transparent !important;
+    }
+    main{
+        font-family: sans-serif;
+    }
+    main.table {
+        height: 90vh;
+        background-color: #fff1;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 .4rem .8rem #0005;
+        overflow: hidden;
+    }
+
+
+/*TABLE HEADER DESIGN*/
+    .table__header {
+        width: 100%;
+        height: 10%;
+        background-color: #fff2;
+        backdrop-filter: blur(7px);
+        padding: .8rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table__header .input-group {
+        width: 35%;
+        height: 100%;
+        background-color: #fff5;
+        padding: 0 .8rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+    .table__header .input-group:hover {
+        width: 45%;
+        background-color: rgba(16, 58, 37, 0.363);
+        box-shadow: 0 .1rem .4rem #0002;
+    }
+    .table__header .input-group input {
+        width: 95%;
+        padding: 0 .5rem 0 .3rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .rainfeddata i,
+    .rainfeddata span {
+        background-color: transparent !important;
+        color: white !important;
+    }
+    .input-group {
+        position: relative;
+    }
+    .search-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+    .input-group i{
+        background-color: transparent;
+        color: white;
+    }
+    .input-group input::placeholder {
+        color: white; 
+        opacity: 0.7; 
+    }   
+
+    
+/*Table Body Design*/ 
+.table_body {
+    width: 98%;
+    max-height: calc(89% - 1.6rem);
+    margin: .8rem auto;
+    display: flex;
+}
+
+
+.table_body_1, .table_body_2{
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+
+/*Table Body Design - SCROLL DESIGN*/
+.table_body_1::-webkit-scrollbar,
+.table_body_2::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table_body_1::-webkit-scrollbar-thumb,
+.table_body_2::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.table_body_1:hover::-webkit-scrollbar-thumb,
+.table_body_2:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+/*Table View Design*/
+table {
+    width: 100%;
+}
+/*Table View Design - TD and TH Design*/
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+/*Table View Design - Header Design*/
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #5e7e6c;
+    cursor: pointer;
+    text-transform: capitalize;
+    color:white;
+}
+
+
+/*Table View Design - Changing Color per line*/
+tbody tr:nth-child(even) {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.06); 
+}
+tbody tr:nth-child(odd) {
+    color:white;
+    background-color: rgba(255, 255, 255, 0.03); 
+}
+
+/*Table View Design - transition for show line*/
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+tbody tr td,
+tbody tr td p{
+    transition: .2s ease-in-out;
+}
+
+
+/* Table View Design - transition for Hide Line */
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+    height: 0; /* Collapse the row height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0; /* Remove padding for hidden rows */
+    font: 0 / 0 sans-serif; /* Hide text */
+    transition: .2s ease-in-out .5s;
+}
+
+/* Button Styles when Row is Hidden */
+tbody tr.hide td button {
+    display: none; /* Hide the button when the row is hidden */
+}
+
+/* Table View Design - hover per line */
+tbody tr:hover {
+    background-color: rgba(71, 116, 88, 0.568) !important;
+}
+
+
+
+
+
+
+
+#table1{
+    margin-right: 5px;
+}
+#table2{
+    margin-left: 5px;
+}
+
+
+.table_body_1, .table_body_2{
+    width: 100%;
+}
+
+
+
+
+
+/*MODAL INSERT DATA*/
+
+.Barangay {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.Barangay input {
+    width: 80px; /* Set desired width */
+    margin: 0; /* Remove any margin */
+    border: 1; /* Optional: remove border for a seamless look */
+    outline: none; /* Optional: remove focus outline */
+}
+
+
+
+
+
+/*TABLE & MODAL DESIGN*/
+
+
+#viewModalPlanting .modal-dialog,
+#viewModalHarvesting .modal-dialog {
+    max-width: 90vw; /* Full width */
+    max-height: 90vh; /* Full height */
+    height: 100%;
+    width: 100%;
+}
+
+#viewModalPlanting .modal-content,
+#viewModalHarvesting .modal-content{
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#viewModalPlanting .modal-body,
+#viewModalHarvesting .modal-body {
+    flex: 1; /* Allow the body to grow and take available space */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+
+.HARVESTING_TABLE, .PLANTING_TABLE{
+width: 100%;
+border-collapse: collapse;
+}
+
+.HARVESTING_TABLE th, .PLANTING_TABLE th,
+.HARVESTING_TABLE td, .PLANTING_TABLE td {
+    border: 1px solid; /* Set border */
+    padding: 8px; /* Set padding */
+    text-align: center; /* Align text to the left */
+    color: black;
+}
+
+.HARVESTING_TABLE th, .PLANTING_TABLE th {
+    background-color: #f2f2f2;
+}
+
+.HARVESTING_TABLE input, .PLANTING_TABLE input, 
+.HARVESTING_TABLE select, .PLANTING_TABLE select {
+    border: none; /* Remove input border */
+    width: 100%; /* Make input take full width */
+    padding: 0; /* Remove input padding */
+    margin: 0; /* Remove margin */
+    background: transparent; /* Make background transparent */
+    outline: none; /* Remove outline on focus */
+    text-align: center;
+}
+
+.HARVESTING_TABLE thead th, .PLANTING_TABLE thead th {
+    position: static;
+}
+
+
+.first_td{
+    width:200px;
+}
+
+
+
+/* Table enter from the right */
+.table-enter {
+    transform: translateX(100%); /* Start off the right side */
+    opacity: 0; /* Start hidden */
+}
+
+.table-enter-active {
+    transform: translateX(0); /* Move to original position */
+    opacity: 1; /* Fade in */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Table leave to the right */
+.table-leave {
+    transform: translateX(0); /* Start at original position */
+    opacity: 1; /* Fully visible */
+}
+
+.table-leave-active {
+    transform: translateX(100%); /* Move off to the right */
+    opacity: 0; /* Fade out */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Table leave to the left */
+.table-leave-left {
+    transform: translateX(0); /* Start at original position */
+    opacity: 1; /* Fully visible */
+}
+
+.table-leave-left-active {
+    transform: translateX(-100%); /* Move off to the left */
+    opacity: 0; /* Fade out */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.modal-backdrop{
+    display: none;
+}
+
+
+
+#viewModalHarvesting .modal-header,
+#viewModalPlanting .modal-header{
+    border-radius: 0;
+    background-color: #4a755f;
+    color:white;
+}
+
+
+#viewModalHarvesting .modal-header h5,
+#viewModalPlanting .modal-header h5{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+
+#viewModalHarvesting .modal-header button,
+#viewModalPlanting .modal-header button{
+    color:white;
+}
+
+/* Pag-hover ng button para lumaki */
+#viewModalHarvesting .modal-header button:hover,
+#viewModalPlanting .modal-header button:hover {
+    transform: scale(1.5); /* Pagtanggal ng laki ng button (20% bigger) */
+}
+
+
+
+.modal-content{
+    border-radius: 0;
+}
+
+.modal-header {
+    border-radius: 0;
+    background-color: #4a755f;
+    color:white;
+}
+
+.modal-header h5{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+
+
+
+.modal-header button,
+.modal-header button{
+    color:white;
+}
+
+/* Pag-hover ng button para lumaki */
+.modal-header button:hover,
+.modal-header button:hover {
+    transform: scale(1.5); /* Pagtanggal ng laki ng button (20% bigger) */
+}
+
+
+.modal-footer button{
+    width: 80%;
+}
+
+
+
+
+.NRPcolor { background-color: #B0D8B6 !important; } /* Soft light mint green (lighter tone) */
+.RCEFcolor { background-color: #F0E8A8 !important; } /* Soft light pastel yellow */
+.OwnOtherscolor { background-color: #FF9F80 !important; } /* Soft coral-orange */
+.FSScolor { background-color: #c1ce94 !important; } /* Fresh green (lime-like) */
+.Informalcolor { background-color: #F6A5B1 !important; } /* Soft rose pink */
+
+
+.Barangaycolor { background-color: #d6c4e6 !important; } /* Soft light blue */
+
+.Hybridcolor { background-color: #D1D1D1 !important; } /* Soft medium grey */
+.Registeredcolor { background-color: #F8A1C4 !important; } /* Soft coral pink */
+.Certifiedcolor { background-color: #A8C9E8 !important; } /* Light sky blue */
+
+.Startercolor { background-color: #E4E4E4 !important; } /* Neutral light grey */
+.Taggedcolor { background-color: #E4E4E4 !important; } /* Neutral light grey */
+.Traditioncolor { background-color: #E4E4E4 !important; } /* Neutral light grey */
+
+
+/* Styling for VIEW_HARVESTING and VIEW_PLANTING tables */
+
+/* General table styling */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE, 
+#VIEW_HARVESTING_INFORMAL_TABLE, 
+#VIEW_HARVESTING_FSS_TABLE,
+#VIEW_PLANTING_FORMAL_NPR_TABLE,
+#VIEW_PLANTING_FORMAL_RCEF_TABLE,
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE,
+#VIEW_PLANTING_INFORMAL_TABLE,
+#VIEW_PLANTING_FSS_TABLE {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.63); /* Light shadow for the table */
+    background-color: #ffffff; /* White background for the table */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header style */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE th, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE th, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE th, 
+#VIEW_HARVESTING_INFORMAL_TABLE th, 
+#VIEW_HARVESTING_FSS_TABLE th,
+#VIEW_PLANTING_FORMAL_NPR_TABLE th,
+#VIEW_PLANTING_FORMAL_RCEF_TABLE th,
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE th,
+#VIEW_PLANTING_INFORMAL_TABLE th,
+#VIEW_PLANTING_FSS_TABLE th {
+    background-color: #007bff; /* Blue background for headers */
+    color: black;
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #977c7c; /* Light gray border */
+}
+
+/* Body cell styling */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE td, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE td, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE td, 
+#VIEW_HARVESTING_INFORMAL_TABLE td, 
+#VIEW_HARVESTING_FSS_TABLE td,
+#VIEW_PLANTING_FORMAL_NPR_TABLE td, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE td, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE td, 
+#VIEW_PLANTING_INFORMAL_TABLE td, 
+#VIEW_PLANTING_FSS_TABLE td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #776464; /* Light gray border */
+    color: #000000; /* Dark text */
+}
+
+/* Zebra striping effect for rows */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE tbody tr:nth-child(odd), 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE tbody tr:nth-child(odd), 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE tbody tr:nth-child(odd), 
+#VIEW_HARVESTING_INFORMAL_TABLE tbody tr:nth-child(odd), 
+#VIEW_HARVESTING_FSS_TABLE tbody tr:nth-child(odd),
+#VIEW_PLANTING_FORMAL_NPR_TABLE tbody tr:nth-child(odd),
+#VIEW_PLANTING_FORMAL_RCEF_TABLE tbody tr:nth-child(odd),
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE tbody tr:nth-child(odd),
+#VIEW_PLANTING_INFORMAL_TABLE tbody tr:nth-child(odd),
+#VIEW_PLANTING_FSS_TABLE tbody tr:nth-child(odd) {
+    background-color: #e9e3e3 !important; /* Light gray for odd rows */
+}
+
+#VIEW_HARVESTING_FORMAL_NPR_TABLE tbody tr:nth-child(even), 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE tbody tr:nth-child(even), 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE tbody tr:nth-child(even), 
+#VIEW_HARVESTING_INFORMAL_TABLE tbody tr:nth-child(even), 
+#VIEW_HARVESTING_FSS_TABLE tbody tr:nth-child(even),
+#VIEW_PLANTING_FORMAL_NPR_TABLE tbody tr:nth-child(even),
+#VIEW_PLANTING_FORMAL_RCEF_TABLE tbody tr:nth-child(even),
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE tbody tr:nth-child(even),
+#VIEW_PLANTING_INFORMAL_TABLE tbody tr:nth-child(even),
+#VIEW_PLANTING_FSS_TABLE tbody tr:nth-child(even) {
+    background-color: #ffffff !important; /* White for even rows */
+}
+
+/* Hover effect for table rows */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE tbody tr:hover, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE tbody tr:hover, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE tbody tr:hover, 
+#VIEW_HARVESTING_INFORMAL_TABLE tbody tr:hover, 
+#VIEW_HARVESTING_FSS_TABLE tbody tr:hover,
+#VIEW_PLANTING_FORMAL_NPR_TABLE tbody tr:hover, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE tbody tr:hover, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE tbody tr:hover, 
+#VIEW_PLANTING_INFORMAL_TABLE tbody tr:hover, 
+#VIEW_PLANTING_FSS_TABLE tbody tr:hover {
+    background-color: #f1f1f1 !important; /* Slightly darker background on hover */
+}
+
+/* Add spacing between header and body */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE thead, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE thead, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE thead, 
+#VIEW_HARVESTING_INFORMAL_TABLE thead, 
+#VIEW_HARVESTING_FSS_TABLE thead,
+#VIEW_PLANTING_FORMAL_NPR_TABLE thead, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE thead, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE thead, 
+#VIEW_PLANTING_INFORMAL_TABLE thead, 
+#VIEW_PLANTING_FSS_TABLE thead {
+    border-bottom: 2px solid #007bff; /* Blue bottom border for header */
+}
+
+/* Button inside table headers (Next, Back) */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE button.shadow, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE button.shadow, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE button.shadow, 
+#VIEW_HARVESTING_INFORMAL_TABLE button.shadow, 
+#VIEW_HARVESTING_FSS_TABLE button.shadow,
+#VIEW_PLANTING_FORMAL_NPR_TABLE button.shadow, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE button.shadow, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE button.shadow, 
+#VIEW_PLANTING_INFORMAL_TABLE button.shadow, 
+#VIEW_PLANTING_FSS_TABLE button.shadow {
+    background-color: #294c57; /* Soft blue-green background */
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#VIEW_HARVESTING_FORMAL_NPR_TABLE button.shadow:hover, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE button.shadow:hover, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE button.shadow:hover, 
+#VIEW_HARVESTING_INFORMAL_TABLE button.shadow:hover, 
+#VIEW_HARVESTING_FSS_TABLE button.shadow:hover,
+#VIEW_PLANTING_FORMAL_NPR_TABLE button.shadow:hover, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE button.shadow:hover, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE button.shadow:hover, 
+#VIEW_PLANTING_INFORMAL_TABLE button.shadow:hover, 
+#VIEW_PLANTING_FSS_TABLE button.shadow:hover {
+    background-color: #496b75; /* Darker blue-green on hover */
+}
+
+/* Styling for seed category columns */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE .Hybridcolor, 
+#VIEW_HARVESTING_FORMAL_NPR_TABLE .Registeredcolor, 
+#VIEW_HARVESTING_FORMAL_NPR_TABLE .Certifiedcolor,
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE .Hybridcolor, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE .Registeredcolor, 
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE .Certifiedcolor,
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE .Hybridcolor, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE .Registeredcolor, 
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE .Certifiedcolor,
+#VIEW_HARVESTING_INFORMAL_TABLE .Startercolor, 
+#VIEW_HARVESTING_INFORMAL_TABLE .Taggedcolor, 
+#VIEW_HARVESTING_INFORMAL_TABLE .Traditioncolor,
+#VIEW_HARVESTING_FSS_TABLE .Startercolor,
+#VIEW_PLANTING_FORMAL_NPR_TABLE .Hybridcolor, 
+#VIEW_PLANTING_FORMAL_NPR_TABLE .Registeredcolor, 
+#VIEW_PLANTING_FORMAL_NPR_TABLE .Certifiedcolor,
+#VIEW_PLANTING_FORMAL_RCEF_TABLE .Hybridcolor, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE .Registeredcolor, 
+#VIEW_PLANTING_FORMAL_RCEF_TABLE .Certifiedcolor,
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE .Hybridcolor, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE .Registeredcolor, 
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE .Certifiedcolor,
+#VIEW_PLANTING_INFORMAL_TABLE .Startercolor, 
+#VIEW_PLANTING_INFORMAL_TABLE .Taggedcolor, 
+#VIEW_PLANTING_INFORMAL_TABLE .Traditioncolor,
+#VIEW_PLANTING_FSS_TABLE .Startercolor {
+    background-color: #e2e6ea; /* Light gray background for seed columns */
+}
+
+/* Style for each individual row to have better spacing */
+#VIEW_HARVESTING_FORMAL_NPR_TABLE tbody tr td,
+#VIEW_HARVESTING_FORMAL_RCEF_TABLE tbody tr td,
+#VIEW_HARVESTING_FORMAL_OWNOTHERS_TABLE tbody tr td,
+#VIEW_HARVESTING_INFORMAL_TABLE tbody tr td,
+#VIEW_HARVESTING_FSS_TABLE tbody tr td,
+#VIEW_PLANTING_FORMAL_NPR_TABLE tbody tr td,
+#VIEW_PLANTING_FORMAL_RCEF_TABLE tbody tr td,
+#VIEW_PLANTING_FORMAL_OWNOTHERS_TABLE tbody tr td,
+#VIEW_PLANTING_INFORMAL_TABLE tbody tr td,
+#VIEW_PLANTING_FSS_TABLE tbody tr td {
+    padding: 10px 15px; /* Add spacing inside the cells */
+}
+
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+

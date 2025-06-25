@@ -1,0 +1,130 @@
+
+/*ALL DESIGN*/
+
+    /*Backgroung Image*/
+    .bg-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../systemimg/MaragLV.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /*ROW SIZE*/
+    .rowone{
+        min-width: 800px;
+        max-width: 80%;
+    }
+
+    /*Invalid Token Design*/
+    .invalidtoken{
+        max-width:400px;
+        height: auto;
+        margin-top:120px;
+    }
+
+    .invalidtoken div{
+    border-radius: 5px;
+    padding:30px;
+    text-align: center;
+    font-family:'arial', sans-serif;
+    }
+
+    .invalidtoken p{
+    font-weight: 300;
+    }
+
+    .invalidtoken h4{
+    font-weight: 500;
+    }
+
+    .invalidtoken img {
+        width: 200px;
+        height: auto;
+    }
+
+    /*Success Reset Design*/
+    .successfulreset{
+        max-width:400px;
+        height: auto;
+        margin-top:150px;
+    }
+    
+    .successfulreset div{
+      border-radius: 5px;
+      padding:20px;
+      text-align: center;
+      font-family:'arial', sans-serif;
+    }
+    
+    .successfulreset p{
+      font-weight: 400;
+    }
+    
+    .successfulreset h4{
+      font-weight: 500;
+    }
+    
+    .successfulreset img {
+        width: 130px;
+        height: auto;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+/*FORM FOR RESET PASSWORD*/
+
+    /*LEFT PART*/
+    .left{
+        background: url('../systemimg/PALMNT.jpg');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    /*RIGHT PART*/
+    .right {
+        padding: 40px;
+        overflow: auto; /* Allows horizontal scrolling if needed */
+        overflow-wrap: break-word; /* Ensures long words break */
+        box-sizing: border-box; /* Includes padding in the element's total width and height */
+    }
+
+    .emptyfields{
+        color: #856404; /* Text color */
+        background-color: #fff3cd; /* Background color */
+        border-color: #ffeeba; /* Border color */
+        padding:5px;
+    }
+
+    .PasswordReset input{
+        background-color:white;
+        border-right: none; 
+        color:#07784f;
+    }
+    
+    .PasswordReset label{
+        background-color:white;
+    }
+
+    .header{
+        color:#444444;
+        font-weight: 400;
+        font-family: "timesnewroman", sans-serif;
+    }
+
+    .Resetbtn input{
+        border-radius:0;
+        width:100%;
+        border:0;
+        padding:0.5em;
+        color:white;
+        background-color:#444444;
+        color:white;
+        border-radius:5px;} 
+    
+    .Resetbtn input:hover {
+        background: #353630;
+        color: white;
+        border-color: #353630;}

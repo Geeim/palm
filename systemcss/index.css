@@ -1,0 +1,317 @@
+
+/* INDEX ALL DESIGN*/
+
+    .bg-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../systemimg/MaragLV.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .row{
+        min-width: 900px;
+        max-width:70%;
+        padding: 0px;
+    }
+
+
+/*LEFT COLUM DESIGN*/
+
+    .left{
+        background-image: linear-gradient(rgba(0, 100, 50, 0.5), rgba(0, 0, 0, 0.5)),url("../systemimg/Farm1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .overlay-Image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+
+    .overlay-Image img {
+        width: 50%;
+        height: auto;
+    }
+
+    .overlay-Imagetext {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: 47%;
+    }
+
+    .overlay-Imagetext p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .btn-modify{
+        background-color: #287d50;
+        color: white;
+        border-radius: 40px;
+        width: 200px;
+    }
+
+    .btn-modify:hover{
+        background-color: #1d5e3c;
+        color: white;
+        border-radius: 40px;
+        width: 200px;
+    }
+
+
+/* RIGHT COLUM DESIGN*/
+
+    #AT, #MA, #btnsignup {
+        transition: opacity 2.5s ease-in-out; /* Apply transition to the opacity property */
+    }
+
+    .d-none {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .right{
+        padding:40px;
+    }
+
+    .signupuser a{
+        color:#737282;
+        font-weight: 200;
+        text-decoration: none;
+        position: relative; }
+
+    .signupuser a:hover {
+        color:#737282;
+        font-weight: 400;
+        text-decoration: none;
+        position: relative; }
+
+    .imglogo{
+            width: auto; 
+            height: 40px;
+        }
+
+    .topheader h5{
+        font-weight: 375;
+        color: #444444;
+    }
+
+    .Userlog span{
+        background-color: white;
+        border-right:0;
+    }
+
+    .Userlog input{
+        background-color: white;
+        border-left:0;
+        color:#07784f;
+    }
+
+    .Userlog i, 
+    .Userlog i{
+        color:#444444;
+    }
+
+    .PassLog span{
+        background-color:white;
+        border-right: none; 
+    }
+
+    .PassLog input{
+        background-color:white;
+        border-left: none; 
+        border-right: none; 
+        color:#07784f;
+    }
+
+    .PassLog label{
+        background-color:white;
+    }
+
+    .inputLogLabels{
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .login input{
+        border-radius:0;
+        width:100%;
+        border:0;
+        padding:0.5em;
+        color:white;
+        background-color:#444444;
+        color:white;
+        border-radius:5px;
+    } 
+
+    .login input:hover {
+        background: #353630;
+        color: white;
+        border-color: #353630;
+    }
+
+    
+    .forgotpass a {
+        color:#737282; 
+        text-decoration: none; 
+        position: relative;
+    }
+    
+    .forgotpass a::after {
+        content: ''; 
+        position: absolute; 
+        left: 0;
+        bottom: -2px; 
+        width: 100%; 
+        height: 1px; 
+        background-color:#a89796; 
+        transition: width 0.3s; 
+        visibility: hidden; 
+    }
+
+    .forgotpass a{
+        cursor: pointer;
+    }
+    
+    .forgotpass a:hover::after {
+        width: 100%; 
+        visibility: visible; 
+    }
+
+
+
+/*MODAL DESIGN*/
+
+    .modal-content {
+        border-radius: 5px;
+        padding:20px;
+    }
+
+    .modal-dialog{
+            max-width:400px;
+            height: auto;
+    }
+
+    .modal-header {
+        border-bottom: none; 
+        text-decoration: none;
+    }
+        
+    
+    /* MODAL - Create Account */
+
+    .BG-ModalInput-CA{
+        background-color:#e9ecef;
+    }
+
+    .BG-ModalInput-CA span{
+        border-right:0;
+        background-color: white;
+    }
+
+    .BG-ModalInput-CA input{
+        border-left:0;
+        color: #4a9171;
+    }
+
+    .color-icon-ca{
+        color:#444444;
+    }
+
+    .btn-CA input{
+        border-radius:0;
+        width:100%;
+        border:0;
+        padding:0.5em;
+        color:white;
+        background-color:#444444;
+        color:white;
+        border-radius:5px;} 
+
+    .btn-CA input:hover {
+        background: #353630;
+        color: white;
+        border-color: #353630;}
+
+    .imgFP img{
+        width: 150px; 
+        height: auto;
+    }
+
+
+    /*MODAL - Error Warning & Info*/
+
+    .Text-Esent-CA p, 
+    .Text-Error-CA p{
+        background-color: #fff3cd; /* Background color */
+        border-color: #ffeeba; /* Border color */
+        padding:5px;
+    }
+
+
+    /* MODAL - Forgot Password */
+
+    .BG-ModalInput-FP{
+        background-color:#e9ecef;
+    }
+
+    .BG-ModalInput-FP span{
+        border-right:0;
+        background-color: white;
+    }
+
+    .BG-ModalInput-FP input{
+        border-left:0;
+        color: #4a9171;
+    }
+
+    .color-icon-fp{
+        color:#444444;
+    }
+
+    .btn-fp input{
+        border-radius:0;
+        width:100%;
+        border:0;
+        padding:0.5em;
+        color:white;
+        background-color:#444444;
+        color:white;
+        border-radius:5px;
+    } 
+
+    .btn-fp input:hover {
+        background: #353630;
+        color: white;
+        border-color: #353630;
+    }
+
+    .imgFP img{
+        width: 150px; 
+        height: auto;
+    }
+
+    .Text-Esent-FP p, 
+    .Text-Error-FP p{
+        background-color: #fff3cd; /* Background color */
+        border-color: #ffeeba; /* Border color */
+        padding:5px;
+    }
+
+    .ATText-Esent-FP p, 
+    .ATText-Error-FP p{
+        background-color: #fff3cd; /* Background color */
+        border-color: #ffeeba; /* Border color */
+        padding:5px;
+    }

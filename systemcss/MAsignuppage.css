@@ -1,0 +1,240 @@
+/*ALL DESIGN*/
+
+    .bg-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../systemimg/MaragLV.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /*ERROR INPUT*/
+    .Errorfield{
+        color: #856404; /* Text color */
+        background-color: #fff3cd; /* Background color */
+        border-color: #ffeeba; /* Border color */
+        padding:5px;
+        padding-left:20px;
+        font-size:14px;
+    }
+    
+
+/*LEFT DESIGN*/
+
+    .left{
+        background: url('../systemimg/PALMNT.jpg');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+/*RIGHT DESIGN*/
+
+    .rowone{
+        min-width: 900px;
+        max-width: 90%;
+    }
+    .right{
+        padding:40px;
+    }
+
+    .textdesign h4{
+        color:#444444;
+        font-weight: 400;
+        font-family: "timesnewroman", sans-serif;
+    }
+
+    .inputLogLabels{
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .fullname ::placeholder {
+        font-size: 80%; 
+    }
+
+    /*BUTTON DESIGN*/
+    .Signup input{
+        border-radius:0;
+        width:100%;
+        border:0;
+        padding:0.5em;
+        color:white;
+        background-color:#444444;
+        color:white;
+        border-radius:5px;} 
+    
+    .Signup input:hover {
+        background: #353630;
+        color: white;
+        border-color: #353630;}
+    
+    
+    .inputemail input:read-only{
+        background-color: whitesmoke;
+    }
+    
+    .form-group input{
+        color:#07784f;
+    }
+
+
+/*INVALID TOKEN DESIGN*/
+   
+    .invalidtoken{
+        max-width:400px;
+        height: auto;
+        margin-top:120px;
+    }
+
+    .invalidtoken div{
+    border-radius: 5px;
+    padding:30px;
+    text-align: center;
+    font-family:'arial', sans-serif;
+    }
+
+    .invalidtoken p{
+    font-weight: 300;
+    }
+
+    .invalidtoken h4{
+    font-weight: 500;
+    }
+
+    .invalidtoken img {
+        width: 200px;
+        height: auto;
+    }
+
+
+/*CONFIRMATION CHANGE ADMIN DESIGN*/
+
+    .confirmation{
+        max-width:400px;
+        height: auto;
+        margin-top:100px;
+    }
+
+    .confirmation div{
+    border-radius: 5px;
+    padding:20px;
+    text-align: center;
+    font-family:'arial', sans-serif;
+    }
+
+    .confirmation p{
+    font-weight: 400;
+    }
+
+    .confirmation h4{
+    font-weight: 500;
+    }
+
+    .confirmation img {
+        width: 130px;
+        height: auto;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    #btnNoConfirmation {
+        border-radius: 0;
+        width: 50%;
+        border: 0;
+        padding: 0.5em;
+        color: white;
+        background-color: #521820;
+        border-radius: 5px;
+        margin-left: 10px;
+    } 
+
+    #btnNoConfirmation:hover {
+        background: #632e35;
+        color: white;
+        border-color: #632e35;
+    }
+
+    #btnYesConfirmation {
+        border-radius: 0;
+        width: 50%;
+        border: 0;
+        padding: 0.5em;
+        color: white;
+        background-color: #444444;
+        border-radius: 5px;
+        margin-right: 10px;
+    } 
+
+    #btnYesConfirmation:hover {
+        background: #353630;
+        color: white;
+        border-color: #353630;
+    }
+
+    .button {
+    display: flex; /* Use flexbox to align buttons in the same line */
+    }
+
+
+/*CANCEL SIGN-UP DESIGN*/
+
+    .cancelSU{
+        max-width:400px;
+        height: auto;
+        margin-top:150px;
+    }
+
+    .cancelSU div{
+    border-radius: 5px;
+    padding:20px;
+    text-align: center;
+    font-family:'arial', sans-serif;
+    }
+
+    .cancelSU p{
+    font-weight: 400;
+    }
+
+    .cancelSU h4{
+    font-weight: 500;
+    }
+
+    .cancelSU img {
+        width: 130px;
+        height: auto;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+
+/*SUCCESS SIGN UP DESIGN*/
+
+    .successSU{
+        max-width:400px;
+        height: auto;
+        margin-top:150px;
+    }
+
+    .successSU div{
+    border-radius: 5px;
+    padding:20px;
+    text-align: center;
+    font-family:'arial', sans-serif;
+    }
+
+    .successSU p{
+    font-weight: 400;
+    }
+
+    .successSU h4{
+    font-weight: 500;
+    }
+
+    .successSU img {
+        width: 130px;
+        height: auto;
+        margin-top:20px;
+        margin-bottom:20px;
+    }

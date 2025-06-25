@@ -1,0 +1,21 @@
+      
+        /*Important*/
+        .leaflet-control-scale-line {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            color: black !important;
+        }
+        .leaflet-control-search .search-button,
+        .leaflet-container .leaflet-control-search,
+        .leaflet-control-measure {
+            box-shadow: none !important;
+        }
+        .leaflet-container .leaflet-control-search{
+            background: none !important;
+        }
+
+        .leaflet-overlay-pane {
+            z-index: 700;
+        }
+        
+        

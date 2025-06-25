@@ -1,0 +1,265 @@
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../systemimg/Farm1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 100%;
+    height:100%;
+    min-height:100% ;
+}
+
+.bg-custom {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    min-width: 900px;
+}
+
+
+.inputfield input#year-input {
+    text-align: center; /* Centers text inside the input */
+    background-color: transparent;
+    border: none; /* Remove default border */
+    color: white;
+    border-radius: 5px;
+    outline: none; /* Remove default outline */
+    border: 1px solid white;
+}
+
+.inputfield input#year-input:focus {
+    border: 1px solid lightblue; /* Set border on focus */
+    box-shadow: 0 0 3px lightblue; /* Adds a subtle shadow on focus */
+}
+
+.fw-custom {
+    font-weight: 100 ;/* Adjust this value as needed */
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for the main circle */
+.circle {
+    display: inline-block;
+    width: 150px;               /* Set the width of the circle */
+    height: 150px;              /* Set the height of the circle */
+    border-radius: 50%;         /* Makes the div circular */
+    background-color: transparent; /* Transparent background */
+    color: white;                /* Text color */
+    display: flex;
+    justify-content: center;    /* Centers the text horizontally */
+    align-items: center;        /* Centers the text vertically */
+    font-size: 15px;            /* Adjust font size */
+    margin-top: 10px;           /* Space above the circle */
+    border: 3px solid transparent; /* Transparent border initially */
+    padding: 20px;              /* Adds padding inside the circle */
+    position: relative;         /* Set positioning context for animation effect */
+    animation: animate 0.2s linear infinite; /* Animation for spinning */
+}
+
+@keyframes animate {
+    0% {
+        border-top-color: rgb(187, 145, 192);;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    6.67% {
+        border-top-color: rgb(187, 145, 192);;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    13.33% {
+        border-top-color: transparent;
+        border-right-color: rgb(187, 145, 192);;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    20% {
+        border-top-color: transparent;
+        border-right-color: rgb(187, 145, 192);;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    26.67% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(187, 145, 192);;
+        border-left-color: transparent;
+    }
+    33.33% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(187, 145, 192);;
+        border-left-color: transparent;
+    }
+    40% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    46.67% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    53.33% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    60% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    66.67% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    73.33% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    80% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);;
+    }
+    86.67% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(187, 145, 192);
+    }
+    100% {
+        border-top-color: rgb(187, 145, 192);;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+/* Style for the main circle */
+.circle_result {
+    display: inline-block;
+    width: 150px;               /* Set the width of the circle */
+    height: 150px;              /* Set the height of the circle */
+    border-radius: 50%;         /* Makes the div circular */
+    background-color: transparent; /* Transparent background */
+    color: white;                /* Text color */
+    display: flex;
+    justify-content: center;    /* Centers the text horizontally */
+    align-items: center;        /* Centers the text vertically */
+    font-size: 20px;            /* Adjust font size */
+    margin-top: 10px;           /* Space above the circle */
+    border: 3px solid rgb(187, 145, 192);/* Light border color */
+    padding: 10px;              /* Adds padding inside the circle */
+    position: relative;         /* Set positioning context */
+    box-sizing: border-box;     /* Ensure padding and border are inside the circle */
+}
+
+
+
+
+/* Container for the dots */
+.jumping-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Space between dots */
+}
+
+/* Style for each dot */
+.jumping_dots_1,
+.jumping_dots_2,
+.jumping_dots_3,
+.jumping_dots_4 {
+    width: 12px;               /* Size of each dot */
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;   /* Change to desired color */
+    animation: jump 1s infinite ease-in-out;
+}
+
+/* Animation delay for each dot */
+.jumping_dots_1 {
+    animation-delay: 0s;
+}
+
+.jumping_dots_2 {
+    animation-delay: 0.3s;  /* 300ms delay */
+}
+
+.jumping_dots_3 {
+    animation-delay: 0.6s;  /* 600ms delay */
+}
+
+.jumping_dots_4 {
+    animation-delay: 0.9s;  /* 900ms delay */
+}
+
+/* Animation for the jumping effect */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);  /* Dots in original position */
+    }
+    50% {
+        transform: translateY(-5px); /* Dots move up */
+    }
+}
+
+
+/* Static Dots Container */
+.static-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;  /* Space between dots */
+}
+
+/* Style for each static dot */
+.static_dots_1,
+.static_dots_2,
+.static_dots_3,
+.static_dots_4 {
+    width: 12px;               /* Size of each dot */
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;   /* Change to desired color */
+}
+
+/* Optional: Hover effect for static dots (if needed) */
+.static-dots_1:hover,
+.static-dots_2:hover,
+.static-dots_3:hover,
+.static-dots_4:hover {
+    background-color: #ddd;  /* Change color on hover */
+}
+

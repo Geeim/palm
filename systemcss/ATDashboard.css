@@ -1,0 +1,134 @@
+/*ALL DESIGN*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/*ENSURE CONTENT INSIDE THE VIEW*/
+::after,
+::before {
+    box-sizing: border-box; /*Ensure all Screen occupied*/
+    margin: 0;
+    padding: 0;}
+
+/*NAVIGATION DESIGN*/
+#sidebar {
+    position: fixed; /* Keep the sidebar fixed */
+    height: 100vh; /* Full height */
+    overflow-y: auto; /*Have Scroll if Nav extend*/
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .10s ease-in-out;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+}
+
+/*SIDE NAV SCROLL*/
+/* Scrollbar for WebKit browsers */
+#sidebar {
+    /* Existing styles */
+    overflow-y: auto; /* Allow scrolling */
+}
+
+/* Scrollbar track */
+#sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Scrollbar handle */
+#sidebar::-webkit-scrollbar-thumb {
+    background: #585555; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Scrollbar handle on hover */
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+}
+
+/* Optional: Scrollbar track */
+#sidebar::-webkit-scrollbar-track {
+    background: #444; /* Background color of the track */
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;}    
+
+/*NAVIGATION SCOPE ALL BACKGROUND DESIGN*/
+.wrapper {
+    display: flex;}
+
+/*TOP DESIGN IMAGE DESIGN*/
+.sidebar-logo {
+    margin: auto 0;}
+.sidebar-logo img {
+    padding:3rem 3rem .5rem 3rem;}
+
+/*FEATURES - DESIGN (A TAGS)*/
+li {
+    list-style: none;}
+.sidebar-item {
+    position: relative;}
+.sidebar-item a{
+    cursor:pointer;}
+.sidebar-nav {
+    padding: 1rem 0;
+    flex: 1 1 auto;}
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;}
+.expand a, .expand a:hover{
+    text-decoration: none;
+    color: white;}
+a.sidebar-link {
+    padding: 1rem 1.625rem; /*Spacing of Every Menu*/
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;}
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid white; /*Active Color Display*/
+    color:white;}
+
+/*SUBMENU PADDING*/
+#sidebar.expand .submenu-text {
+padding-left: 35px;}
+
+/*ARROW DESIGN FOR SUBMENU*/
+#sidebar.expand .arrowdown{
+position: absolute;
+right: 20;
+transition:0.2s ease-in-out;
+font-size:15px;
+padding-top:3px;}
+
+#sidebar.expand #DV{
+    background: rgba(255, 255, 255, 0.05);
+    display: none;}
+#sidebar.expand #DR{
+    background: rgba(255, 255, 255, 0.05);
+    display: none;}
+#sidebar.expand .rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;}
+
+/*SPA DESIGN - ALL CONTENT SHOW*/
+.main {
+    min-height: 100vh;
+    width: calc(100% - 70px); /* Collapsed sidebar */
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar.expand + .main {
+    width: calc(100% - 260px); /* Expanded sidebar */
+    margin-left: 260px; /* Adjust for expanded state */
+}
+
