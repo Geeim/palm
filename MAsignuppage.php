@@ -219,7 +219,7 @@ if ($adminresult && $adminresult->num_rows > 0) {
                     $('.cancelSU').removeClass('d-none');
                     
                     setTimeout(function() {
-                    window.location.href = "deletetoken.php?token=<?php echo $encoded_token?>";
+                    window.location.href = "Function/deletetoken.php?token=<?php echo $encoded_token?>";
                     }, 3000);
                 });
 
