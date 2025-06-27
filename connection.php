@@ -1,10 +1,10 @@
 <?php
 
-$Hostname = "sql12.freesqldatabase.com";      
-$Username = "sql12785979";      
-$Password = "NgdPaYkpqH";      
-$DBname   = "sql12785979";      
-$Port     = "3306";     
+$Hostname = "switchyard.proxy.rlwy.net";
+$Username = "root";
+$Password = "oZiOBuSiraHJubGOwIFcmRZOIpgkgAyA";
+$DBname   = "railway";
+$Port     = 44908;    
 
 // Only one connection — include the port
 $con = mysqli_connect($Hostname, $Username, $Password, $DBname, $Port);
