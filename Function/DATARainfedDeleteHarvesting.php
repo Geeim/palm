@@ -1,5 +1,4 @@
 <?php
-
 include '../connection.php';
 
 if (isset($_POST['year'], $_POST['month'], $_POST['range_date'])) {

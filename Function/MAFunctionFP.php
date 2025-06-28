@@ -1,6 +1,4 @@
 <?php
-//CODE DONE
-
 include "../connection.php";
 require '../vendor/autoload.php';
 

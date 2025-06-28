@@ -1,5 +1,4 @@
 <?php
-//FINISH CODE
 session_start();
 
     if(empty($_SESSION['ATstatus']) || $_SESSION['ATstatus'] == 'ATinvalid'){
@@ -11,10 +10,10 @@ session_start();
     }
 
     if($_SESSION['ATstatus'] == 'ATvalid'){
-        echo "<script>window.location.href = '/ATDashboard.php';</script>";
+        echo "<script>window.location.href = 'ATDashboard.php';</script>";
     }else if($_SESSION['MAstatus'] == 'MAvalid'){
         echo 
-        "<script>window.location.href = '/MADashboard.php';</script>";
+        "<script>window.location.href = 'MADashboard.php';</script>";
     }
 
 ?>

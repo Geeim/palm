@@ -1,6 +1,4 @@
 <?php
-
-//CODE FINISH - FINALIZE
 include "connection.php";
 
 // Condition for Session for DASHBOARD VIEW ONLY

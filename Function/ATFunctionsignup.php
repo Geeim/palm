@@ -1,7 +1,4 @@
 <?php
-
-//NOT FINISH!
-
 session_start();
 include "../connection.php";
 require '../vendor/autoload.php';
@@ -160,7 +157,7 @@ if(isset($_POST['addAT'])) {
                                 <span><strong>Username:</strong> $Eusername</span><br>
                                 <span><strong>Password:</strong> $Epassword</span><br><br>
                                 <p class='click' style='display: flex; justify-content: center;'>
-                                    <a class='button' style='color: white;' href='href='https://palm-kgsh.onrender.com/index.php'>Log In to PALM</a>
+                                    <a class='button' style='color: white;' href='https://palm-kgsh.onrender.com/index.php'>Log In to PALM</a>
                                 </p>
 
                                 <br>

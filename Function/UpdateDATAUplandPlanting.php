@@ -1,5 +1,4 @@
 <?php
-
 include '../connection.php';
 
 $response = [];  // Array to store response messages

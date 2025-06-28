@@ -1,5 +1,4 @@
 <?php
-
 include 'connection.php';
 
 // Condition for Session for DASHBOARD VIEW ONLY

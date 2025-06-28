@@ -6,7 +6,6 @@ ini_set('display_errors', 1);
 
 include "../connection.php";
 
-
 $IDadmin = $_SESSION['IDadmin'];
 
 // Check if IDdeleted is passed

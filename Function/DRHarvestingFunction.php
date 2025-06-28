@@ -1,8 +1,8 @@
 <?php
-
+    session_start();
     include '../connection.php'; 
 
-    session_start();
+ 
 
     $IDemployee = $_SESSION['IDemployee'];
 

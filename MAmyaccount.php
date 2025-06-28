@@ -1,7 +1,4 @@
 <?php
-
-//NOT FINISH 
-
 require('Function/MAsession.php');
 include "connection.php";
 

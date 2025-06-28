@@ -1,5 +1,4 @@
 <?php
-//CODE DONE
 include "../connection.php";
 require '../vendor/autoload.php';
 
@@ -126,7 +125,7 @@ if (isset($_POST['FPbuttonAT'])) {
                         ";
                                         
                         $mail->AltBody = "Hello $Efname $Elname, please click the link below to recover your account.
-                                            <p><a class='button'https://palm-kgsh.onrender.com/ATresetpass.php?Get=$encoded_IDemployee&token=$encodedToken'>Recover Process</a></p>";
+                                             <p><a class='button' href='https://palm-kgsh.onrender.com/ATresetpass.php?Get=$encoded_IDemployee&token=$encodedToken'>Recover Process</a></p>";
                         
                         $mail->send();
                         

@@ -1,5 +1,4 @@
 <?php
-//CODE DONE
 session_start();
 
 if(empty($_SESSION['ATstatus']) || $_SESSION['ATstatus'] == 'ATinvalid'){

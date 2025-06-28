@@ -1,5 +1,4 @@
 <?php
-//CODE DONE
 include "../connection.php";
 
 if(isset($_POST['btnreset'])) {

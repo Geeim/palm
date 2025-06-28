@@ -1,5 +1,4 @@
 <?php
-// Include the database connection
 include('../connection.php');
 
 // Check if the necessary POST parameters are set

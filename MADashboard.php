@@ -1,5 +1,4 @@
 <?php
-    //CODE NOT FINISH - GIS FEATURES
     require('Function/MAsession.php');
     include "connection.php";
     $MAstatus = $_SESSION['MAstatus'];

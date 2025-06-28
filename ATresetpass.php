@@ -1,6 +1,4 @@
 <?php
-//NOT FINISH CODE
-
 session_start();
 include "connection.php";
 

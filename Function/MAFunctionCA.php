@@ -1,9 +1,7 @@
 <?php
-//CODE DONE
 session_start();
 include "../connection.php";
 require '../vendor/autoload.php';
-
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;

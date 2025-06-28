@@ -1,5 +1,4 @@
 <?php
-
 include "../connection.php";
 
 if (!isset($_POST['IDemployee']) || empty($_POST['IDemployee'])) {
