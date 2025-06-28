@@ -502,10 +502,6 @@ $(document).on('submit', '#exportirrigated', function (e) {
                $('#rangeDateExportIrrigated').prop('disabled', true);
                $('#yearExportIrrigated').prop('disabled', true);
                $('#mayorsnameexportIrrigated').prop('disabled', true);
-               
-                setTimeout(() => {
-                    window.location.href = res.redirect_url;
-                }, 1000);
 
                setTimeout(function() {
                     $('#btnexportIrrigated').prop('disabled', false).text('Submit');
@@ -516,7 +512,8 @@ $(document).on('submit', '#exportirrigated', function (e) {
 
                    $('#exportmodalIrrigated').modal('hide');
                    $('#exportirrigated')[0].reset();
-               }, 5000);  // 3-second delay (3000 milliseconds)
+                    window.location.href = res.redirect_url;
+               }, 1000);  // 3-second delay (3000 milliseconds)
 
             
             } else if (res.status == 'ERROR') {
