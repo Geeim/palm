@@ -1,4 +1,7 @@
 <?php
+ob_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include "../connection.php";
 require '../vendor/autoload.php';
 
@@ -1099,7 +1102,7 @@ $Mayor = $_GET['Mayor'];
     $writer = new Xlsx($spreadsheet);
     $writer->save('php://output');
 
-
+        ob_end_clean();
         exit();
 
 
