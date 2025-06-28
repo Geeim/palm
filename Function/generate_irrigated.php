@@ -2,9 +2,6 @@
 include "../connection.php";
 require '../vendor/autoload.php';
 
-include "../connection.php";
-require '../vendor/autoload.php'; 
-
 // PhpSpreadsheet namespaces
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;

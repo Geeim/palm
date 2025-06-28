@@ -516,7 +516,7 @@ $(document).on('submit', '#exportrainfed', function (e) {
 
                    $('#exportmodalRainfed').modal('hide');
                    $('#exportrainfed')[0].reset();
-               }, 10000);  // 3-second delay (3000 milliseconds)
+               }, 5000);  // 3-second delay (3000 milliseconds)
 
             
             } else if (res.status == 'ERROR') {
