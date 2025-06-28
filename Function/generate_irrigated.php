@@ -1,9 +1,4 @@
 <?php
-// ✅ Prevent output warnings from breaking headers in Render
-ini_set('display_errors', 0);
-ini_set('output_buffering', 'On');
-ob_start(); // buffer output para hindi masira ang Excel output
-
 include "../connection.php";
 require '../vendor/autoload.php';
 
@@ -17,6 +12,7 @@ use PhpOffice\PhpSpreadsheet\Style\Font;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PhpOffice\PhpSpreadsheet\Style\Border;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 
 
 //REUSABLE FUNCTION
@@ -139,7 +135,11 @@ $Mayor = $_GET['Mayor'];
             ],
         ];
 
-        foreach (range('A', 'AQ') as $columnID) {
+        $lastColumn = 'AQ';
+        $lastIndex = Coordinate::columnIndexFromString($lastColumn);
+
+        for ($i = 1; $i <= $lastIndex; $i++) {
+            $columnID = Coordinate::stringFromColumnIndex($i);
             $sheet1->getColumnDimension($columnID)->setAutoSize(true);
             $sheet2->getColumnDimension($columnID)->setAutoSize(true);
         }
