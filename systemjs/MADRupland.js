@@ -514,7 +514,7 @@ $(document).on('submit', '#exportupland', function (e) {
 
                    $('#exportmodalUpland').modal('hide');
                    $('#exportupland')[0].reset();
-               }, 5000);  // 3-second delay (3000 milliseconds)
+               }, 10000);  // 3-second delay (3000 milliseconds)
 
             
             } else if (res.status == 'ERROR') {
