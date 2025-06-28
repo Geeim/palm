@@ -1,4 +1,12 @@
 <?php
+// ✅ Prevent output warnings from breaking headers in Render
+ini_set('display_errors', 0);
+ini_set('output_buffering', 'On');
+ob_start(); // buffer output para hindi masira ang Excel output
+
+include "../connection.php";
+require '../vendor/autoload.php';
+
 include "../connection.php";
 require '../vendor/autoload.php'; 
 
