@@ -502,10 +502,8 @@ $(document).on('submit', '#exportupland', function (e) {
                $('#rangeDateExportUpland').prop('disabled', true);
                $('#yearExportUpland').prop('disabled', true);
                $('#mayorsnameexportUpland').prop('disabled', true);
-               window.location.href = res.redirect_url;
 
                setTimeout(function() {
-                    location.reload();
                     $('#btnexportUpland').prop('disabled', false).text('Submit');
                     $('#monthexportUpland').prop('disabled', false);
                     $('#rangeDateExportUpland').prop('disabled', false);
@@ -514,7 +512,8 @@ $(document).on('submit', '#exportupland', function (e) {
 
                    $('#exportmodalUpland').modal('hide');
                    $('#exportupland')[0].reset();
-               }, 10000);  // 3-second delay (3000 milliseconds)
+                    window.location.href = res.redirect_url;
+               }, 1000);  // 3-second delay (3000 milliseconds)
 
             
             } else if (res.status == 'ERROR') {

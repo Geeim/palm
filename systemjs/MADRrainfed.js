@@ -504,10 +504,8 @@ $(document).on('submit', '#exportrainfed', function (e) {
                $('#rangeDateExportRainfed').prop('disabled', true);
                $('#yearExportRainfed').prop('disabled', true);
                $('#mayorsnameexportRainfed').prop('disabled', true);
-               window.location.href = res.redirect_url;
 
                setTimeout(function() {
-                    location.reload();
                     $('#btnexportRainfed').prop('disabled', false).text('Submit');
                     $('#monthexportRainfed').prop('disabled', false);
                     $('#rangeDateExportRainfed').prop('disabled', false);
@@ -516,7 +514,8 @@ $(document).on('submit', '#exportrainfed', function (e) {
 
                    $('#exportmodalRainfed').modal('hide');
                    $('#exportrainfed')[0].reset();
-               }, 10000);  // 3-second delay (3000 milliseconds)
+                    window.location.href = res.redirect_url;
+               }, 1000);  // 3-second delay (3000 milliseconds)
 
             
             } else if (res.status == 'ERROR') {
